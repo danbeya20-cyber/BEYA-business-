@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mia Business</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .login {
+      background: white;
+      color: #111;
+      padding: 9px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #111, #333);
+      color: white;
+      padding: 70px 25px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
+      color: #ddd;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #111;
+    }
+
+    .btn-secondary {
+      border: 1px solid white;
+      color: white;
+    }
+
+    .section {
+      padding: 45px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 15px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .products {
+      background: #111;
+      color: white;
+    }
+
+    .products .card {
+      color: #222;
+    }
+
+    .about {
+      text-align: center;
+      line-height: 1.7;
+      color: #555;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      header {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- EN-TÊTE -->
+  <header>
+    <div class="logo">MIA BUSINESS</div>
+
+    <a href="#" class="login">
+      Se connecter
+    </a>
+  </header>
+
+
+  <!-- ACCUEIL -->
+  <section class="hero">
+
+    <h1>Bienvenue chez Mia Business</h1>
+
+    <p>
+      Découvrez nos services professionnels de design graphique,
+      de nettoyage et notre sélection de produits cosmétiques.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#services" class="btn btn-primary">
+        Découvrir nos services
+      </a>
+
+      <a href="#produits" class="btn btn-secondary">
+        Voir nos produits
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+
+    <h2 class="section-title">
+      Nos services
+    </h2>
+
+    <div class="cards">
+
+      <!-- DESIGN -->
+      <div class="card">
+
+        <div class="icon">🎨</div>
+
+        <h3>Design graphique</h3>
+
+        <p>
+          Création d'affiches, flyers, logos, invitations,
+          visuels pour réseaux sociaux et autres supports
+          de communication.
+        </p>
+
+        <a href="#">
+          Découvrir le service →
+        </a>
+
+      </div>
+
+
+      <!-- NETTOYAGE -->
+      <div class="card">
+
+        <div class="icon">🧹</div>
+
+        <h3>Nettoyage</h3>
+
+        <p>
+          Services de nettoyage pour maisons, bureaux,
+          commerces, événements et autres espaces.
+        </p>
+
+        <a href="#">
+          Demander un service →
+        </a>
+
+      </div>
+
+
+      <!-- AUTRES -->
+      <div class="card">
+
+        <div class="icon">✨</div>
+
+        <h3>Autres services</h3>
+
+        <p>
+          De nouvelles prestations pourront être ajoutées
+          progressivement à Mia Business.
+        </p>
+
+        <a href="#">
+          Découvrir →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUITS -->
+  <section class="section products" id="produits">
+
+    <h2 class="section-title">
+      Produits cosmétiques
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">💄</div>
+
+        <h3>Produits cosmétiques</h3>
+
+        <p>
+          Découvrez notre catalogue de produits cosmétiques.
+        </p>
+
+        <a href="#">
+          Voir le catalogue →
+        </a>
+
+      </div>
+
+      <div class="card">
+
+        <div class="icon">🛍️</div>
+
+        <h3>Commander</h3>
+
+        <p>
+          Sélectionnez vos produits et envoyez votre commande
+          à Mia Business.
+        </p>
+
+        <a href="#">
+          Commencer une commande →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- À PROPOS -->
+  <section class="section">
+
+    <h2 class="section-title">
+      À propos de Mia Business
+    </h2>
+
+    <p class="about">
+      Mia Business est une entreprise proposant différents
+      services et produits afin de répondre aux besoins de
+      ses clients. Notre plateforme permettra de découvrir
+      nos offres et de demander facilement nos services ou
+      commander nos produits.
+    </p>
+
+  </section>
+
+
+  <!-- PIED DE PAGE -->
+  <footer>
+
+    <p>
+      © 2026 Mia Business — Tous droits réservés.
+    </p>
+
+  </footer>
+
+</body>
+  </html>
